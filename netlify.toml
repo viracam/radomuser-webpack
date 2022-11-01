@@ -1,3 +1,4 @@
 [produc]
     publish = "dist"
     command = "npm run produc"
+    base = "client"
