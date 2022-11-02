@@ -1,4 +1,4 @@
-[produc]
+[build]
     publish = "dist"
-    command = "CI = npm run produc"
+    command = "npm run build"
     base = "client"
