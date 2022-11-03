@@ -1,7 +1,7 @@
-const APPI = process.env.APPI;
+const API = process.env.API;
 
 const getData = async (id) => {
-  const apiURl = id ? `${APPI}${id}` : APPI;
+  const apiURl = id ? `${API}${id}` : API;
   try {
     const response = await fetch(apiURl);
     const data = await response.json();
