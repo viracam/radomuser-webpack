@@ -14,7 +14,6 @@ module.exports = {
 
     },
     mode: 'development',
-    watch: true,
     resolve: {
         extensions: ['.js'],
         alias:{
@@ -80,9 +79,9 @@ module.exports = {
         new Dotenv()
     ],
     devServer: {
-        contentBase: path.join(__dirname, 'dist'),
+        static: path.join(__dirname, 'dist'),
         compress: true,
         historyApiFallback: true,
         port: 3006,
-    }
+    },
 }
